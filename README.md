@@ -18,6 +18,14 @@ I am an Analyst with hands-on experience in ** Excel, SQL, Python, Power Bi and 
    
 ---
 
+## 📁 Excel Projects
+
+- **E-Commerce Sales Analysis**  
+  Interactive Excel dashboard analyzing sales, customer behavior, and delivery efficiency.  
+  👉 [View Project](excel-projects/ecommerce-sales-analysis)
+
+---
+
 ## 🚀 How to navigate this Repo
 - Project files, screenshots and all related documents are stored directly in the Repo
 - Each Problem includes:
