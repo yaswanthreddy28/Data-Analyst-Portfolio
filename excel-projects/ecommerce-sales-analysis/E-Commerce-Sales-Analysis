@@ -1,0 +1,18 @@
+🛒 E-Commerce Sales Analysis (Excel)
+
+Objective:
+Analyze e-commerce sales data to understand customer behavior, sales performance, delivery efficiency, and product demand.
+
+Key Work Done:
+-Cleaned and structured raw transactional data
+-Created calculated fields and KPIs (sales, quantity, ratings, delivery time)
+-Built interactive PivotTables and PivotCharts
+-Designed a fully interactive Excel dashboard with slicers
+-Key Metrics & Analysis:
+-Total Orders, Total Sales Amount, Quantity Sold
+-Average Customer Rating
+-Average Delivery Time
+-Weekly sales and quantity trends
+-Popular products analysis
+-Order distribution by gender and order mode
+-Delivery time distribution
