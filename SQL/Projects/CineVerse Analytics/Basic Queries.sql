@@ -1,4 +1,4 @@
-/*Netflix Analytics Project
+/* CineVerse Analytics Project
 Database: PostgreSQL
 Author: Yaswanth Reddy */
 
@@ -62,3 +62,4 @@ Select
 	movie_name,extract(year from release_date) as year
 from movies
 where release_date >= '2016-01-01' and rating >=7;
+
