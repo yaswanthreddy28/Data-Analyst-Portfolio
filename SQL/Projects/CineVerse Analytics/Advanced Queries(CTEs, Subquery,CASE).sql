@@ -1,4 +1,4 @@
-/*Netflix Analytics Project
+/*CineVerse Analytics Project
 Database: PostgreSQL
 Author: Yaswanth Reddy */
 
@@ -200,3 +200,4 @@ and exists(
     WHERE m.director_id = d.director_id
       AND m.rating >=8
 );
+
