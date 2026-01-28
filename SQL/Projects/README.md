@@ -1,112 +1,74 @@
-# 🎬 CineVerse Analytics
+# 📁 SQL Projects Overview
 
-> A production-style SQL analytics project focused on movie performance, revenue trends, and director-level insights.
+This folder contains a curated collection of **SQL projects** designed to demonstrate **real-world data analysis skills** using relational databases.
 
----
-
-## 📌 About the Project
-
-**CineVerse Analytics** is a fully designed relational database and analytics layer that models the **theatrical film industry**.
-
-This project goes beyond basic CRUD queries and focuses on:
-- Revenue analysis
-- Career-level performance tracking
-- Trend and variance analysis
-- Real-world analytical SQL use cases
-
-Built to simulate how data analysts work with **large transactional datasets** in production environments.
+Each project focuses on **practical business problems**, moving from basic querying to advanced analytical techniques used in production environments.
 
 ---
 
-## 🧱 Database Overview
+## 🎯 Purpose of This Folder
 
-**Core Entities**
-- `movies`
-- `directors`
-- `genres`
-- `movie_genres`
-- `movie_financials`
+The goal of these projects is to:
+- Strengthen **SQL fundamentals to advanced concepts**
+- Practice **analytical problem-solving**
+- Simulate **real business datasets**
+- Build a **recruiter-ready SQL portfolio**
 
-**Key Metrics**
-- Tickets sold
-- Ticket price
-- Total revenue
-- Production cost
-- Revenue growth & variance
+These are not toy examples — each project is structured as a mini production database with meaningful analytics.
 
 ---
 
-## 📊 Analytical Capabilities
+## 🧠 Skills Covered Across Projects
 
-### SQL Concepts Used
-- INNER / LEFT JOINs
-- GROUP BY & HAVING
+- Database Design & Relationships
+- Joins (INNER, LEFT, RIGHT)
+- Aggregations & Grouping
 - Subqueries & CTEs
 - Window Functions
-  - `ROW_NUMBER`
-  - `RANK` / `DENSE_RANK`
-  - `LAG` / `Lead`
-  - Running totals
-  - Rolling averages
-- Conditional logic (`CASE`)
-- Date-based analysis
+- Trend & Variance Analysis
+- Ranking & Time-based Analysis
+- Business-focused metrics & KPIs
 
 ---
 
-## 🔍 Business Questions Answered
+## 📊 Types of Projects Included
 
-- Which directors generate the highest total revenue?
-- What is each director’s highest-grossing movie?
-- How does a movie perform compared to the director’s previous release?
-- What percentage of a director’s career revenue comes from each movie?
-- Who are the most volatile directors in terms of revenue performance?
-- How does revenue evolve over a director’s career timeline?
+Projects in this folder may cover domains such as:
+- Entertainment & Media Analytics
+- E-Commerce & Retail
+- Finance & Revenue Analysis
+- Operations & Performance Tracking
+- Customer & Behavioral Analysis
 
----
-
-## 📈 Sample Analytics Performed
-
-- Top N movies per director by revenue
-- Revenue contribution % per movie
-- Cumulative career revenue
-- Rolling 3-movie performance averages
-- Year-over-year revenue comparison
-- Revenue increase/decrease detection using window functions
+Each domain is chosen to expose different **analytical patterns** and **SQL use cases**.
 
 ---
 
-## 🛠️ Tech Stack
+## 🚀 How to Use These Projects
 
-- SQL (PostgreSQL compatible)
-- Relational Database Design
-- Analytical SQL
-- Window Functions & CTEs
+- Clone the repository
+- Create the database using schema files
+- Load sample data
+- Practice queries from basic to advanced
+- Modify or extend queries for deeper analysis
 
----
-
-## 🎯 Why This Project?
-
-This project was built to:
-- Demonstrate **advanced SQL proficiency**
-- Show **analytical thinking**, not just syntax
-- Mirror **real business analytics problems**
-- Serve as a reusable practice dataset for analysts
+Ideal for:
+- Interview preparation
+- SQL skill improvement
+- Portfolio demonstration
 
 ---
 
-## 🚀 Ideal For
+## 📌 Note
 
-- Data Analysts
-- Business Analysts
-- SQL Learners (Intermediate → Advanced)
-- Portfolio-driven job seekers
+All projects are:
+- Database-agnostic (PostgreSQL-friendly)
+- Fully reproducible
+- Designed with **analysis-first thinking**
 
 ---
 
-## 📬 Contact
-
-**Yaswanth Reddy**  
-Data Analyst | SQL | Power BI | Python  
-GitHub: https://github.com/yaswanthreddy28
+**Author:** Yaswanth Reddy  
+**Focus:** SQL • Data Analysis • Business Insights
 
 
