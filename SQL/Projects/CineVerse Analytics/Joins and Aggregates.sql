@@ -1,4 +1,4 @@
-/*Netflix Analytics Project
+/*CineVerse Analytics Project
 Database: PostgreSQL
 Author: Yaswanth Reddy */
 
@@ -172,3 +172,4 @@ JOIN movie_genres mg on mg.movie_id = m.movie_id
 JOIN genres g on g.genre_id = mg.genre_id
 WHERE g.genre_name = 'Action'
 group by d.director_name;
+
