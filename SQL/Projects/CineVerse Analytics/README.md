@@ -1,10 +1,10 @@
-# Netflix Movie Analytics
+# CineVerse Analytics
 
 ## 📖 Overview
-This repository contains a complete Netflix-style relational database and a collection of SQL analytics queries.
+This repository contains a complete Cinema/Theatre style relational database and a collection of SQL analytics queries.
 
 ## 🗂️ Database Schema
-The database is designed to mirror a Netflix / OTT analytics system.
+The database is designed to mirror a Theatrical System Database.
 
 ## Core Tables:
 - Movies – movie metadata (name, release date, rating, director)
