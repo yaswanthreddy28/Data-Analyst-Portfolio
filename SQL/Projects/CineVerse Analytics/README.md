@@ -1,44 +1,112 @@
-# CineVerse Analytics
+# 🎬 CineVerse Analytics
 
-## 📖 Overview
-This repository contains a complete Cinema/Theatre style relational database and a collection of SQL analytics queries.
+> A production-style SQL analytics project focused on movie performance, revenue trends, and director-level insights.
 
-## 🗂️ Database Schema
-The database is designed to mirror a Theatrical System Database.
+---
 
-## Core Tables:
-- Movies – movie metadata (name, release date, rating, director)
-- Directors – director master data
-- Actors – actor master data
-- Movie_actors – movie ↔ actor relationship
-- Genres – genre master data
-- Movie_genres – movie ↔ genre mapping
-- Movie_financials – revenue, ticket price, cost to make
+## 📌 About the Project
 
-## 📌 The schema supports:
-- Many-to-many relationships
-- Time-series analysis
-- Revenue, ROI, and performance metrics
+**CineVerse Analytics** is a fully designed relational database and analytics layer that models the **theatrical film industry**.
 
-## 🧠 Skills Demonstrated
-- SQL (Beginner → Advanced)
+This project goes beyond basic CRUD queries and focuses on:
+- Revenue analysis
+- Career-level performance tracking
+- Trend and variance analysis
+- Real-world analytical SQL use cases
+
+Built to simulate how data analysts work with **large transactional datasets** in production environments.
+
+---
+
+## 🧱 Database Overview
+
+**Core Entities**
+- `movies`
+- `directors`
+- `genres`
+- `movie_genres`
+- `movie_financials`
+
+**Key Metrics**
+- Tickets sold
+- Ticket price
+- Total revenue
+- Production cost
+- Revenue growth & variance
+
+---
+
+## 📊 Analytical Capabilities
+
+### SQL Concepts Used
+- INNER / LEFT JOINs
+- GROUP BY & HAVING
+- Subqueries & CTEs
+- Window Functions
+  - `ROW_NUMBER`
+  - `RANK` / `DENSE_RANK`
+  - `LAG` / `Lead`
+  - Running totals
+  - Rolling averages
+- Conditional logic (`CASE`)
+- Date-based analysis
+
+---
+
+## 🔍 Business Questions Answered
+
+- Which directors generate the highest total revenue?
+- What is each director’s highest-grossing movie?
+- How does a movie perform compared to the director’s previous release?
+- What percentage of a director’s career revenue comes from each movie?
+- Who are the most volatile directors in terms of revenue performance?
+- How does revenue evolve over a director’s career timeline?
+
+---
+
+## 📈 Sample Analytics Performed
+
+- Top N movies per director by revenue
+- Revenue contribution % per movie
+- Cumulative career revenue
+- Rolling 3-movie performance averages
+- Year-over-year revenue comparison
+- Revenue increase/decrease detection using window functions
+
+---
+
+## 🛠️ Tech Stack
+
+- SQL (PostgreSQL compatible)
 - Relational Database Design
-- Business-first analytical thinking
-- Data exploration & storytelling
-- Performance comparison & trend analysis
+- Analytical SQL
+- Window Functions & CTEs
 
-## Key SQL Concepts Used
-- JOINs
-- GROUP BY, HAVING
-- Subqueries & Correlated Subqueries
-- CTEs (WITH)
-- Window Functions (ROW_NUMBER, RANK, LAG, AVG OVER)
-- Conditional logic (CASE)
-- Date & time analysis
-- Revenue & profitability calculations
+---
 
+## 🎯 Why This Project?
 
-## Tools
-- PostgreSQL
-- Insights and findings
+This project was built to:
+- Demonstrate **advanced SQL proficiency**
+- Show **analytical thinking**, not just syntax
+- Mirror **real business analytics problems**
+- Serve as a reusable practice dataset for analysts
+
+---
+
+## 🚀 Ideal For
+
+- Data Analysts
+- Business Analysts
+- SQL Learners (Intermediate → Advanced)
+- Portfolio-driven job seekers
+
+---
+
+## 📬 Contact
+
+**Yaswanth Reddy**  
+Data Analyst | SQL | Power BI | Python  
+GitHub: https://github.com/yaswanthreddy28
+
 
