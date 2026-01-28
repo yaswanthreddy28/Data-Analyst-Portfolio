@@ -1,4 +1,4 @@
-/* Netflix Analytics
+/* CineVerse Analytics Project
 Database: PostgreSQL
 Author: Yaswanth Reddy*/
 
@@ -118,3 +118,4 @@ SELECT
 FROM movies m
 left join movie_financials mf on m.movie_id = mf.movie_id
 left join directors d on m.director_id = d.director_id
+
