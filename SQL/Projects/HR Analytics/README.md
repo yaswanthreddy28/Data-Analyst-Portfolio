@@ -104,9 +104,9 @@ Built to reflect how **analysts actually use SQL** in **HR, People Analytics, an
 
 ## 📬 Contact
 
-Yaswanth Reddy
-Data Analyst | SQL | Power BI | Python
+**Yaswanth Reddy**  
+Data Analyst | SQL | Power BI | Python  
+- GitHub: https://github.com/yaswanthreddy28
+- LinkedIn: https://www.linkedin.com/in/sai-yaswanth-reddy/
+- Portfolio: https://yaswanthreddy28.github.io/yaswanthreddy28/
 
-🔗 GitHub: https://github.com/yaswanthreddy28
-
-🔗 LinkedIn: (add your LinkedIn here)
