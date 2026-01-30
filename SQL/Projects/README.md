@@ -71,10 +71,10 @@ All projects are:
 ## 📬 Contact
 
 **Yaswanth Reddy**  
-Data Analyst | SQL | Power BI | Python  
-GitHub: https://github.com/yaswanthreddy28
-LinkedIn: https://www.linkedin.com/in/sai-yaswanth-reddy/
-Portfolio: https://yaswanthreddy28.github.io/yaswanthreddy28/
+- Data Analyst | SQL | Power BI | Python  
+- GitHub: https://github.com/yaswanthreddy28
+- LinkedIn: https://www.linkedin.com/in/sai-yaswanth-reddy/
+- Portfolio: https://yaswanthreddy28.github.io/yaswanthreddy28/
 
 
 
