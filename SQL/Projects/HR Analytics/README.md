@@ -1,156 +1,112 @@
-🧑‍💼 HR Analytics with SQL (PostgreSQL)
+# 🧑‍💼 HR Analytics SQL Case Study
 
-Author: Yaswanth Reddy
-Role Focus: Data Analyst / Business Analyst
-Tech Stack: PostgreSQL, SQL
-Level: Strong Intermediate → Advanced Analytics SQL
+> **A production-style SQL analytics project focused on workforce insights, compensation analysis, and organizational performance.**
 
-📌 Project Overview
+---
 
-This project is an end-to-end HR Analytics case study built entirely in SQL, focusing on real business decision-making, not just query writing.
+## 📌 **About the Project**
 
-The goal of this project is to demonstrate:
+**HR Analytics SQL Case Study** is an end-to-end, business-driven SQL project that models a **realistic corporate HR database** and answers **high-impact people analytics questions**.
 
-How analysts translate business questions into SQL
+This project intentionally avoids overengineering and instead focuses on:
 
-How to design clean, explainable queries
+- ✅ Business-first problem solving  
+- ✅ Clean, explainable SQL logic  
+- ✅ Interview-ready analytical thinking  
+- ✅ Real-world HR decision scenarios  
 
-How to use advanced SQL constructs responsibly
+Built to reflect how **analysts actually use SQL** in **HR, People Analytics, and Business Intelligence** roles.
 
-How to avoid overengineering while still being realistic
+---
 
-This project is intentionally lightweight but deep — optimized for interviews and portfolio reviews.
+## 🧱 **Database Overview**
 
-🧠 What This Project Is (and Is Not)
-✅ What it IS
+### **Core Entities**
+- **`employees`** (self-referencing manager hierarchy)
+- **`departments`**
+- **`roles`** (Junior / Mid / Senior / Lead)
+- **`salaries`** (historical + current records)
+- **`performance_reviews`**
 
-Business-driven HR analytics
+### **Key Dimensions**
+- Department
+- Role & seniority level
+- Manager relationships
+- Time (hire date, salary history)
 
-Interview-safe SQL complexity
+---
 
-Clean schema with managerial hierarchy
+## 📊 **Analytical Capabilities**
 
-Strong use of CTEs and window functions
+### **SQL Concepts Used**
+- **INNER / LEFT / SELF JOINs**
+- **GROUP BY & HAVING**
+- **Subqueries & CTEs**
+- **Window Functions**
+  - `ROW_NUMBER`
+  - `RANK` / `DENSE_RANK`
+  - `NTILE`
+  - Running totals
+  - Department-level comparisons
+- **Conditional logic (`CASE`)**
+- **NULL-safe logic**
+- **Time-based calculations**
 
-Queries you can explain under pressure
+---
 
-❌ What it is NOT
+## 🔍 **Business Questions Answered**
 
-A toy dataset
+- **Which high-performing employees are underpaid and at risk of attrition?**
+- **How balanced is managerial span of control across the organization?**
+- **Is there a gender pay gap within departments?**
+- **Which departments deliver the highest performance per salary dollar (ROI)?**
+- **Who are the top-paid but underperforming employees?**
+- **How has hiring grown over time?**
+- **Which department holds the largest share of total headcount?**
+- **Who represents the highest salary cost within each department?**
+- **Are there senior employees without managerial oversight?**
 
-An overcomplicated enterprise warehouse
+---
 
-A JOIN-heavy monster that takes minutes to reason about
+## 📈 **Sample Analytics Performed**
 
-🧱 Database Scope
+- **High-potential employee identification**
+- **Manager-to-employee ratio analysis**
+- **Gender pay gap auditing**
+- **Departmental ROI (performance vs cost)**
+- **Salary contribution % per employee**
+- **Salary ranking within departments**
+- **Hiring trend & workforce growth analysis**
+- **Executive bench strength evaluation**
 
-The database models a realistic HR system with:
+---
 
-Employees (with manager relationships)
+## 🛠️ **Tech Stack**
 
-Departments
+- **SQL (PostgreSQL compatible)**
+- **Relational Database Design**
+- **Analytical SQL**
+- **Window Functions & CTEs**
+- **Business-oriented query modeling**
 
-Roles & seniority levels
+---
 
-Salary history
+## File Purpose
 
-Performance reviews
+- 01_HR_Analytics_Business_Insights.sql
+  Business-first HR questions (primary portfolio file)
 
-This enables analysis across:
+- 02_Core_HR_SQL_Foundations.sql
+  Joins, CTEs, subqueries, CASE logic
 
-Compensation & pay equity
+- 03_Advanced_Analytics_Window_Functions.sql
+  Ranking, percent contribution, running totals, comparisons
 
-Performance vs pay
+## 📬 Contact
 
-Hiring & growth trends
+Yaswanth Reddy
+Data Analyst | SQL | Power BI | Python
 
-Org structure & leadership depth
+🔗 GitHub: https://github.com/yaswanthreddy28
 
-Department-level ROI
-
-📂 Repository Structure
-├── 01_HR_Analytics_Business_Insights.sql
-├── 02_Core_HR_SQL_Foundations.sql
-├── 03_Advanced_Analytics_Window_Functions.sql
-
-
-Each file represents a clear skill layer, progressing from fundamentals to business impact.
-
-📊 01_HR_Analytics_Business_Insights.sql
-🔹 Business-Focused Analytics (Primary Portfolio File)
-
-This file answers real HR leadership questions, such as:
-
-🔥 High-potential employees at attrition risk
-
-👥 Managerial span of control
-
-⚖️ Gender pay gap analysis
-
-💰 Departmental ROI (performance per salary dollar)
-
-🚨 Overpaid / underperforming talent
-
-📈 Hiring trends and workforce concentration
-
-🏢 Executive bench strength
-
-📋 Department “Value” summary reports
-
-Skills Demonstrated
-
-Translating ambiguous business problems into SQL
-
-Choosing the right aggregation level (data grain)
-
-Window functions for ranking and comparisons
-
-Thoughtful use of CTEs for readability
-
-Business-first naming and logic
-
-📌 This is the main file recruiters should review first.
-
-🧠 02_Core_HR_SQL_Foundations.sql
-🔹 SQL Fundamentals Done Right
-
-This file demonstrates strong analytical SQL foundations, including:
-
-INNER, LEFT, and self-joins
-
-GROUP BY with correct aggregations
-
-CASE statements for business logic
-
-Subqueries vs CTEs (with reasoning)
-
-NULL-safe logic and assumptions
-
-Readable, maintainable query structure
-
-Why this matters
-
-Recruiters care less about how complex your SQL is, and more about:
-
-Can you reason about joins?
-
-Can you avoid double counting?
-
-Can you explain your logic clearly?
-
-This file answers all three.
-
-🧮 03_Advanced_Analytics_Window_Functions.sql
-🔹 Advanced SQL for Analytics
-
-This file focuses on window functions used in real analytics workflows, including:
-
-ROW_NUMBER, RANK, DENSE_RANK
-
-NTILE for salary banding
-
-Department vs company-wide comparisons
-
-Running totals and cumulative metrics
-
-Percent contribution to department budgets
+🔗 LinkedIn: (add your LinkedIn here)
