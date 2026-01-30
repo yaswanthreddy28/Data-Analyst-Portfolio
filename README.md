@@ -29,6 +29,7 @@ A Technical Lead with 2.4 years of analytics experience(overall 3.8 in IT)  with
 ## 📡Contact
 - **GitHub:** https://github.com/yaswanthreddy28
 - **linkedIn** www.linkedin.com/in/sai-yaswanth-reddy
+- **Portfolio** https://yaswanthreddy28.github.io/yaswanthreddy28/
 
 ---
 
