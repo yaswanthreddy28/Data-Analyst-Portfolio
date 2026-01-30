@@ -92,14 +92,6 @@ This project was built to:
 - Mirror **real business analytics problems**
 - Serve as a reusable practice dataset for analysts
 
----
-
-## 🚀 Ideal For
-
-- Data Analysts
-- Business Analysts
-- SQL Learners (Intermediate → Advanced)
-- Portfolio-driven job seekers
 
 ---
 
