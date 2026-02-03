@@ -13,11 +13,10 @@ The objective is to ensure clarity, consistency, and easy monitoring of employee
 - Dataset: Employee shift scheduling data
 - Granularity: Employee-level shift assignments
 - Key fields include:
-  - Employee Name / ID
+  - Employee Name
   - Shift Date
   - Shift Type (Morning / Evening / Night)
-  - Department / Team (if applicable)
-
+    
 ---
 
 ## 🛠 Data Preparation
@@ -58,7 +57,6 @@ and improve workforce utilization.
 ## 🧰 Tools Used
 - **Microsoft Excel**
 - **Formulas**
-- **Pivot Tables**
 - **Charts**
 
 ---
