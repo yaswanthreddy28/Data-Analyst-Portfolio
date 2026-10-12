@@ -17,8 +17,8 @@ with Movie_count AS(
 ),
 rankedrows as (
 	select 
-		director_id,genre_name,movie_count,movie_cnt,
-		row_number() OVER(partition by director_id order by movie_count,genre_name desc) as rnk
+		director_id,genre_name,movie_cnt,
+		row_number() OVER(partition by director_id order by movie_cnt desc,genre_name) as rnk
 	FROM movie_count
 )
 SELECT 
@@ -60,7 +60,7 @@ With highest_gross_movies AS(
 		dense_rank() over(partition by m.director_id order by coalesce(sum(mf.tickets_sold*mf.ticket_price),0) Desc) as rnk
 	FROM movies m
 	left join movie_financials mf on m.movie_id = mf.movie_id
-	GROUP by m.director_id,m.movie_name
+	GROUP by m.director_id,m.movie_id,m.movie_name
 )
 SELECT d.director_name,hgm.movie_name,hgm.gross
 from directors d 
@@ -105,17 +105,24 @@ FROM DirectorProgress
 ORDER BY director_name, release_date;
 
 --Identify movies where the Revenue was higher than the previous movie directed by the same person.
-
-SELECT 
-	d.director_name,m.movie_name,coalesce(Round((mf.tickets_sold*mf.ticket_price)/10000000,0),0) as revenue_in_crores,
-	coalesce(round(lag(tickets_sold*mf.ticket_price) OVER(partition by m.director_id ORDER by release_date asc)/10000000,0)::"text",'1st movie') as Prev_Revenue_in_crores,
-	Case
-		WHEN coalesce(mf.tickets_sold*mf.ticket_price,0) > lag(tickets_sold*mf.ticket_price) OVER(partition by m.director_id ORDER by release_date asc) THEN 'Increase'
-		WHEN coalesce(mf.tickets_sold*mf.ticket_price,0) < lag(tickets_sold*mf.ticket_price) OVER(partition by m.director_id ORDER by release_date asc) THEN 'Decrease'
-		when coalesce(mf.tickets_sold*mf.ticket_price,0) = lag(tickets_sold*mf.ticket_price) OVER(partition by m.director_id ORDER by release_date asc) THEN 'No change'
-		Else '1st Movie'
-	End as Revenue_trend
-FROM movies m
-left join movie_financials mf on m.movie_id = mf.movie_id
-left join directors d on m.director_id = d.director_id
+WITH cines AS (
+    SELECT
+        d.director_name,
+        m.movie_name,
+        m.release_date,
+        mf.tickets_sold * mf.ticket_price AS revenue,
+        LAG(mf.tickets_sold * mf.ticket_price)
+            OVER (PARTITION BY m.director_id ORDER BY m.release_date) AS prev_revenue
+    FROM movies m
+    LEFT JOIN movie_financials mf ON m.movie_id = mf.movie_id
+    LEFT JOIN directors d ON m.director_id = d.director_id
+)
+SELECT
+    director_name,
+    movie_name,
+    ROUND(revenue / 10000000, 0)      AS revenue_in_crores,
+    ROUND(prev_revenue / 10000000, 0) AS prev_revenue_in_crores
+FROM cines
+WHERE revenue > prev_revenue
+ORDER BY director_name, release_date;
 
